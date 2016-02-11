@@ -1,0 +1,109 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 1em;
+}
+
+.Cards {
+    background: #0074D9;
+    padding: 1em;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.Cards-columns {
+    flex-shrink: 0;
+    display: flex;
+}
+
+.Cards-column {
+    flex-shrink: 0;
+    width: 18em;
+    margin-right: 1em;
+}
+
+.Cards-group {
+    background: #DDDDDD;
+    padding: 1em;
+    border-radius: 0.15em;
+    box-shadow: 0 .1em #666;
+    margin-bottom: 1em;
+}
+
+.Cards-header {
+    margin-bottom: 1em;
+}
+
+.Cards-title {
+    margin: 0;
+}
+
+.Cards-card {
+    border-radius: 0.15em;
+    padding: 1em;
+    background: white;
+    box-shadow: 0 .1em .1em #aaa;
+}
+
+.Cards-card:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.Cards-cardText {
+    margin: 0;
+}
+
+.Cards-addCardButton {
+    margin-top: 1em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Cards-addCardButton::before {
+    color: #aaa;
+    font-weight: bold;
+    font-size: 1.5em;
+    content: '+';
+}
+
+.Cards-addGroupButton {
+    background: #DDDDDD;
+    padding: .5em;
+    border-radius: 0.15em;
+    box-shadow: 0 .1em #666;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Cards-addGroupButton::before {
+    color: #aaa;
+    font-weight: bold;
+    font-size: 1.5em;
+    content: '+';
+}
+
+.Cards-addColumnButton {
+    flex-shrink: 0;
+    background: #DDDDDD;
+    padding: .5em;
+    border-radius: 0.15em;
+    box-shadow: 0 .1em #666;
+    cursor: pointer;
+    text-align: center;
+    align-self: flex-start;
+    width: 18em;
+}
+
+.Cards-addColumnButton::before {
+    color: #aaa;
+    font-weight: bold;
+    font-size: 1.5em;
+    content: '+';
+}
+
+.is-hidden {
+    display: none;
+}
